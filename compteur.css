@@ -1,0 +1,75 @@
+body {
+   width: 950px;
+   margin: auto;
+   color: #123456;
+   background-color: #abcdef;
+   text-align: justify;
+}
+
+h2 {
+   text-indent: 30px;
+   margin-top: 10px;
+   margin-bottom: 5px;
+}
+
+p {
+   text-indent: 30px;
+   margin-bottom: 0px;
+   margin-top: 5px;
+}
+
+button {
+   height: 2.25em;
+   margin-bottom: 8px;
+}
+
+.compteur{
+	text-align: center;
+}
+
+.right{
+   float: right;
+}
+
+textarea {
+	width: 97.6%;
+	height: 350px;
+	padding: 10px;
+	border: 2px solid #000000;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+ol {
+   padding-left: 15px;
+   margin: 5px;
+}
+
+ol li {
+   text-indent: 10px;
+   margin-bottom: .25em; 
+}
+
+ol li:before {
+    content: ".";
+    color: #abcdef;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute; 
+    left: 101px;
+    line-height: 20px;
+}
+
+td, th {
+   text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%
+}
+
+table, th, td {
+    border: 1px solid black;
+}

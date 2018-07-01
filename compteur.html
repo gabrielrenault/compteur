@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Compteur</title>
+        <link rel="stylesheet" href="compteur.css">
+    </head>
+
+    <body>
+    
+         <p>Entrez votre texte dans la case ci-dessous&#8239;:</p>
+         <div class="compteur">
+            <textarea id="texte" placeholder="Une case somme toute toute normale..."></textarea>
+         </div>
+         <div id="boutons"><span id="bouton0"></span> <span id="bouton1"></span> <span id="bouton2"></span> <span id="bouton3"></span> <span id="bouton4" class="right"></span></div>
+         <div id="resultat"></div>
+         
+         <h2>Usage</h2>
+         <p>
+         Il suffit d'écrire ou coller votre texte dans la case blanche et d'appuyer sur un des boutons en-dessous pour compter les mots de votre texte et potentiellement les lister.
+         Le premier ne fait que compter les mots et sera donc plus rapide que les trois suivants.
+         Vous pouvez choisir d'afficher la liste des mots de votre texte par ordre alphabétique, par nombre d'occurrences dans votre texte ou par ordre lexicographique.
+         Le nombre de caractères affichés se restreint aux caractères présents dans un mot et ne prend pas en compte la ponctuation.
+         </p>
+         <h2>Restriction</h2>
+         <p>
+         Le code a été développé pour la langue française.
+         Il est possible de l'utiliser avec des mots appartenant à d'autres langues mais cela pourrait fausser le résultat.
+         Si vous n'utilisez que des caractères présents dans la langue française, en particulier s'il n'y a pas de diacritique, il ne devrait pas y avoir de souci.
+         Attention toutefois à l'apostrophe et au tiret pour lesquels des règles spécifiques ont été développées.
+         </p>
+         
+         <script src="compteur.js"></script>
+    </body>
+</html>
