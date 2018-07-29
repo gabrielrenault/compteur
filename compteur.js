@@ -101,6 +101,9 @@ var valeur = function (lettre){
       case "ê":
          return 5;
          break;
+      case "'":
+         return 27;
+         break;
       case "ç":
          return 3;
          break;
@@ -116,6 +119,9 @@ var valeur = function (lettre){
       case "û":
       case "ù":
          return 21;
+         break;
+      case "-":
+         return 27;
          break;
       case "ï":
          return 9;
@@ -136,10 +142,6 @@ var valeur = function (lettre){
          break;
       case "ÿ":
          return 25;
-         break;
-      case "'":
-      case "-":
-         return 27;
          break;
       default:
          return 0;
@@ -164,19 +166,27 @@ var valeur2 = function (lettre){
       case "è":
          return 2;
          break;
+      case "u":
+         return 0;
+         break;
+      case "û":
+         return 2;
+         break;
+      case "ù":
+         return 1;
+         break;
       case "ê":
          return 3;
          break;
       case "ë":
          return 4;
          break;
-      case "u":
+      case "o":
          return 0;
          break;
-      case "ù":
+      case "ô":
          return 1;
          break;
-      case "û":
       case "â":
          return 2;
          break;
@@ -200,12 +210,6 @@ var valeur2 = function (lettre){
          break;
       case "ï":
          return 2;
-         break;
-      case "o":
-         return 0;
-         break;
-      case "ô":
-         return 1;
          break;
       case "ö":
          return 2;
@@ -310,7 +314,7 @@ var pourtexte2 = function (texte) {
    var mott;
    var lent;
    for (var i=0;i<textelgr;i++){
-      lettre = texte.slice(i,i+1);
+      lettre = texte.charAt(i);
       val = valeur(lettre);
       if (val === 0){
          // si on change de mot
