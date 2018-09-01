@@ -232,6 +232,9 @@ var valeur2 = function (lettre){
       case "-":
          return 9999;
          break;
+      case undefined:   
+         return -1;
+         break;
    }
 }
 
